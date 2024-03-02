@@ -102,11 +102,14 @@ header .busca box-icon:hover{
     padding: 16px;
     border-radius: 10px;
 }
+#teams ul li.none{
+    display: none;
+}
 #teams ul li.noTeams{
     width: 100%;
-} 
+}
 #teams ul li.noTeams h4{
-     justify-content: center;
+    justify-content: center;
 }
 #teams ul li h4{
     display: flex;
@@ -189,6 +192,7 @@ header .busca box-icon:hover{
     opacity: 1;
     visibility: visible;
 }
+
 form{
     width: 500px;
     background-color: var(--dark-gray);

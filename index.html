@@ -12,7 +12,7 @@
             <img src="imgs/logo.png" alt="Logo Digital Teams" />
         </div>
         <div class="busca">
-            <input type="text" placeholder="Qual grupo você está procurando?">
+            <input type="text" placeholder="Qual grupo você está procurando?" id="pesquisa" onKeyUp="searchTeam()">
             <box-icon name='search-alt'></box-icon>
         </div>
     </header>
@@ -21,86 +21,6 @@
             <h2>Teams <button id="criarBtn"><box-icon name='plus'></box-icon> novo team</button></h2>
             <ul id="listTeams">
                 <li class="noTeams"><h4>Nenhum team criado ainda</h4></li>
-                    <!-- <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                </li>
-                <li>
-                    <h4>Nome do Team <box-icon name='show'></box-icon></h4>
-                    <h1>0 <span>/ 0</span></h1>
-                    <div class="actions">
-                        <button>adicionar</button>
-                        <button><box-icon name='trash'></box-icon></button>
-                    </div>
-                 </li><-- -->
             </ul>
         </section>
     </main>
@@ -113,6 +33,15 @@
         <input type="text" id="capacidade" required>
         <button type="submit">Criar</button>
     </form>
+
+    <form id="formParticipante">
+        <h3>Adicionar <box-icon id="fecharParticipanteBtn" name="x"></box-icon></h3>
+        <input type="hidden" id="teamID">
+        <label for="nome">Nome do partipante</label>
+        <input type="text" id="nomeParticipante" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js/index.js"></script>
 </body>
